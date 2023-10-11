@@ -6,36 +6,36 @@ import './Header.css';
 class Header extends React.Component {
 
   constructor(props) {
-    super(props);
-    this.state = {
-      collapsed:true
-    }
-    this.auth = new Auth();
-  }
+  //   super(props);
+  //   this.state = {
+  //     collapsed:true
+  //   }
+  //   this.auth = new Auth();
+  // }
 
-  navBarToggleClick = (event) => {
-    this.setState({
-      collapsed:this.state.collapsed ? false : true
-    });
-  }
+  // navBarToggleClick = (event) => {
+  //   this.setState({
+  //     collapsed:this.state.collapsed ? false : true
+  //   });
+  // }
 
-  navLinkClick = (event) => {
-    this.setState({
-      collapsed:true
-    });
-  }
+  // navLinkClick = (event) => {
+  //   this.setState({
+  //     collapsed:true
+  //   });
+  // }
 
-  login = (event) => {
-    this.auth.login();
-  }
+  // login = (event) => {
+  //   this.auth.login();
+  // }
 
-  render() {
+  // render() {
 
-    let collapsedClass = "collapse";
+    // let collapsedClass = "collapse";
 
-    if(!this.state.collapsed) {
-      collapsedClass = "";
-    }
+    // if(!this.state.collapsed) {
+    //   collapsedClass = "";
+    // }
 
     return (
       <nav className="sbc-navbar navbar fixed-top navbar-expand-xl navbar-light">
@@ -46,7 +46,7 @@ class Header extends React.Component {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={collapsedClass+" navbar-collapse sbc-navbar-collapse"} id="navbarSupportedContent">
+        <div className={collapsedClass+" "} id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto"></ul>
           <ul className="navbar-nav sbc-navbar-content">
             <li className="nav-item">
